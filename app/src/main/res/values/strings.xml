@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Doctus</string>
+    <string name="crear_tip">Crear tip</string>
+    <string name="loading_tips">Cargando tips</string>
+    <string name="editar">Editar</string>
+    <string name="error_loading_tips">Ha ocurrido un error al cargar los Tips, por favor inténtalo nuevamente</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_ingresar_fecha">Seleccionar fecha</string>
+    <string name="hint_ingresar_titulo">Ingresar titulo</string>
+    <string name="hint_ingresar_descripcion">Ingresar descripción</string>
+    <string name="button_label_guardar">Crear Tip</string>
+    <string name="tip_created_successfully">Tip creado satisfactoriamente</string>
+    <string name="error_creating_tip">Ha ocurrido un error al crear el Tip, por favor inténtalo nuevamente</string>
+    <string name="textinput_empty">Este campo no puede estar vacío</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="button_label_editar">Editar Tip</string>
+    <string name="tip_updated_successfully">Tip actualizado correctamente</string>
+    <string name="error_updating_tip">Ha ocurrido un error al editar el Tip, por favor inténtalo nuevamente</string>
+    <string name="tip_deleted_successfully">Tip eliminado satisfactoriamente</string>
 </resources>

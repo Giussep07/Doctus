@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Prueba tituloPrueba tituloPrueba tituloPrueba tituloPrueba titulo"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:firstBaselineToTopHeight="40dp"
+            app:layout_constraintEnd_toStartOf="@id/textView_fecha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="40dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="08-05-2019"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:firstBaselineToTopHeight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="28dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Esta es la descripción de un Tip"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:firstBaselineToTopHeight="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textView_titulo"
+            app:layout_constraintTop_toBottomOf="@id/textView_titulo"
+            app:layout_goneMarginEnd="16dp"
+            app:lineHeight="28dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_editar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/editar"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_descripcion" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_eliminar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/eliminar"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_editar"
+            app:layout_constraintTop_toBottomOf="@id/textView_descripcion" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
